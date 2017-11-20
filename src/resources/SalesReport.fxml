@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="salesReportAnchorPane" maxHeight="552.0" maxWidth="820.0" minHeight="547.0" minWidth="820.0" prefHeight="547.0" prefWidth="775.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid none none; -fx-border-width: 10 40 0 0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.SalesReportController">
+   <children>
+      <TableView fx:id="salesTable" layoutX="12.0" layoutY="70.0" prefHeight="438.0" prefWidth="740.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+         <columns>
+            <TableColumn fx:id="customerCol" prefWidth="347.0" text="CUSTOMER" />
+            <TableColumn fx:id="subtotalCol" prefWidth="88.0" text="SUBTOTAL" />
+            <TableColumn fx:id="balanceCol" prefWidth="104.0" text="BALANCE" />
+            <TableColumn fx:id="dateCol" prefWidth="194.0" text="DATE OF TRANSACTION" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="27.0" prefHeight="28.0" prefWidth="126.0" text="SALES REPORT" textFill="#807c7c" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="572.0" layoutY="40.0" maxHeight="30.0" minHeight="30.0" onKeyTyped="#txtSearchAction" prefHeight="30.0" prefWidth="200.0" promptText="Search..." style="-fx-border-style: solid solid solid transparent; -fx-border-color: #F2F2F2; -fx-effect: none; -fx-border-radius: 0 0 0 0; -fx-background-radius: 0 0 0 0;" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="448.0" layoutY="40.0" maxHeight="15.0" minHeight="15.0" prefHeight="15.0" prefWidth="122.0" text="Search by customer or" textFill="#b9b9b9" wrapText="true" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="448.0" layoutY="63.0" maxHeight="15.0" minHeight="15.0" prefHeight="15.0" prefWidth="122.0" text="date (yyyy-mm-dd)" textFill="#b9b9b9" wrapText="true" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="35.0" />
+      <JFXButton fx:id="btnReceipt" layoutX="20.0" layoutY="508.0" maxHeight="30.0" minHeight="30.0" onAction="#btnReceiptAction" prefHeight="30.0" style="-fx-background-color: #38cf7e;" text="VIEW TRANSACTION DETAILS" textFill="WHITE" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@table-view.css" />
+      <URL value="@scroll-bar.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="todaysReportAnchorPane" maxHeight="552.0" maxWidth="820.0" minHeight="547.0" minWidth="820.0" prefHeight="547.0" prefWidth="775.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid none none; -fx-border-width: 10 40 0 0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.TodaysReportController">
+   <children>
+      <TableView fx:id="todaysReportTable" layoutX="243.0" layoutY="90.0" prefHeight="349.0" prefWidth="410.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="60.0">
+         <columns>
+            <TableColumn fx:id="customerCol" maxWidth="300.0" minWidth="213.0" prefWidth="213.0" text="CUSTOMER" />
+            <TableColumn fx:id="subtotalCol" text="SUBTOTAL" />
+            <TableColumn fx:id="balanceCol" prefWidth="76.0" text="BALANCE" />
+         </columns>
+      </TableView>
+      <VBox layoutX="521.0" layoutY="69.0" prefHeight="392.0" prefWidth="253.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="253.0" text="PRODUCTS" textFill="#808080">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNoTransactionSelected" alignment="CENTER" prefHeight="34.0" prefWidth="253.0" text="No transaction selected" textFill="#808080" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ListView fx:id="todaysProductsListView" prefHeight="286.0" prefWidth="253.0" styleClass="unstyled-list-view" stylesheets="@list-view-style.css">
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+            </ListView>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="205.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="170.0" text="SUBTOTAL:" textFill="#616060">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="123.0" text="Kshs." textFill="#28ce79">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSubtotal" alignment="CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="168.0" text="0000.0" textFill="#29cc78">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="20.0" layoutY="503.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="707.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+         <children>
+            <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="57.0" text="TOTAL:" textFill="#616060" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="40.0" text="Kshs." textFill="#93c0f5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodaysTotal" alignment="CENTER" prefHeight="30.0" prefWidth="119.0" text="0000.00" textFill="#93c0f5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <padding>
+                  <Insets bottom="8.0" right="20.0" top="8.0" />
+               </padding>
+            </Separator>
+            <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="72.0" text="PAID:" textFill="#616060" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="40.0" text="Kshs." textFill="#28ce79">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodaysPaid" alignment="CENTER" prefHeight="48.0" prefWidth="114.0" text="0000.00" textFill="#28ce79">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <padding>
+                  <Insets bottom="8.0" right="20.0" top="8.0" />
+               </padding>
+            </Separator>
+            <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="72.0" text="BALANCE:" textFill="#616060" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="40.0" text="Kshs." textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodaysBalance" alignment="CENTER" prefHeight="48.0" prefWidth="114.0" text="0000.00" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="24.0" layoutY="36.0" prefHeight="16.0" prefWidth="176.0" text="TODAY'S REPORT" textFill="#807c7c" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="524.0" layoutY="41.0" maxHeight="30.0" minHeight="30.0" onKeyTyped="#txtSearchAction" prefHeight="30.0" prefWidth="200.0" promptText="Search..." style="-fx-border-style: solid solid solid transparent; -fx-border-color: #F2F2F2; -fx-effect: none; -fx-border-radius: 0 0 0 0; -fx-background-radius: 0 0 0 0;" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="419.0" layoutY="41.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="114.0" text="Search by customer" textFill="#b9b9b9" wrapText="true" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="14.0" layoutY="472.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="102.0" text="SUMMARY:" textFill="#616060" wrapText="true" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="156.0" layoutY="471.0" prefWidth="200.0" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="350.0" />
+   </children>
+   <stylesheets>
+      <URL value="@table-view.css" />
+      <URL value="@scroll-bar.css" />
+   </stylesheets>
+</AnchorPane>

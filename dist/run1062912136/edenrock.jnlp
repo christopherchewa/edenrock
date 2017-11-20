@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="edenrock.jnlp">
+  <information>
+    <title>edenrock</title>
+    <vendor>Chewa</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Dactivejdbc.log "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="edenrock.jar" size="116182" download="eager" />
+    <jar href="lib\activejdbc-1.4.13.jar" size="199911" download="eager" />
+    <jar href="lib\activejdbc-instrumentation-1.4.11.jar" size="734279" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\javalite-common-1.4.13.jar" size="68587" download="eager" />
+    <jar href="lib\javassist-3.18.1-GA.jar" size="714194" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2158932" download="eager" />
+    <jar href="lib\joda-time-2.9.9.jar" size="634048" download="eager" />
+    <jar href="lib\junit-4.8.2.jar" size="237344" download="eager" />
+    <jar href="lib\slf4j-api-1.7.6.jar" size="28688" download="eager" />
+    <jar href="lib\slf4j-simple-1.7.6.jar" size="10684" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.7.2.jar" size="3201133" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="edenrock" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="edenrock.MainApp"  name="edenrock" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="500.0" minWidth="500.0" prefHeight="456.0" prefWidth="500.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.CartContentController">
+   <children>
+      <VBox layoutX="230.0" layoutY="92.0" prefHeight="400.0" prefWidth="494.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton fx:id="btnCloseDialog" contentDisplay="GRAPHIC_ONLY" onAction="#btnCloseDialogAction">
+               <graphic>
+                  <FontAwesomeIconView glyphName="REMOVE" size="15" />
+               </graphic>
+               <VBox.margin>
+                  <Insets left="432.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="453.0" text="TRANSACTION DETAILS" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Separator>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="453.0" text="Cart Content" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <HBox>
+               <children>
+                  <Label maxHeight="30.0" maxWidth="230.0" minHeight="30.0" minWidth="230.0" prefHeight="30.0" prefWidth="230.0" text="Product" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <Label maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="39.0" prefWidth="100.0" text="Qty" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <Label alignment="CENTER" maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="39.0" prefWidth="100.0" text="Total Cost" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ListView fx:id="cartProductsListView" prefHeight="189.0" prefWidth="460.0" styleClass="unstyled-list-view-products">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <stylesheets>
+                  <URL value="@list-view-style.css" />
+                  <URL value="@scroll-bar.css" />
+               </stylesheets>
+            </ListView>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="454.0">
+               <children>
+                  <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Customer Details:" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomerInfo" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="306.0" text="CustomerInfo" textFill="#616060">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="454.0">
+               <children>
+                  <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Cart Total:" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Kshs." textFill="#38cf7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblCartTotal" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="251.0" text="0.0" textFill="#38cf7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="454.0">
+               <children>
+                  <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Balance:" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Kshs." textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="92.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblBalance" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="247.0" text="0.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

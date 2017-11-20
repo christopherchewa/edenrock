@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="563.0" style="-fx-background-color: #00AEEF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.LoginController">
+   <children>
+      <VBox layoutY="1.0" prefHeight="361.0" prefWidth="563.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <JFXButton fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" onAction="#btnCloseAction">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="20" />
+               </graphic>
+               <VBox.margin>
+                  <Insets left="520.0" top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="563.0" text="EDEN ROCK" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="83.0" prefWidth="563.0" text="SALES MANAGEMENT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="65.0" prefWidth="568.0" text="USER ACCOUNT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblInvalid" alignment="CENTER" prefHeight="65.0" prefWidth="568.0" text="INVALID CREDENTIALS, TRY AGAIN" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="41.0" prefWidth="563.0" text="USERNAME" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtUsername" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="512.0" style="-fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="PASSWORD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="txtPassword" maxHeight="30.0" minHeight="30.0" prefHeight="30.0">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnSignIn" buttonType="RAISED" layoutX="219.0" layoutY="380.0" maxHeight="40.0" minHeight="40.0" onAction="#btnSignInAction" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #28CE79;" text="SIGN IN" textFill="WHITE" AnchorPane.bottomAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

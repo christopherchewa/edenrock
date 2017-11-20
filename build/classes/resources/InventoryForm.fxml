@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inventoryFormAnchorPane" maxHeight="552.0" minHeight="540.0" prefHeight="552.0" prefWidth="540.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid solid solid; -fx-border-width: 10 0 0 40;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.InventoryFormController">
+   <children>
+      <VBox layoutX="115.0" layoutY="16.0" maxHeight="540.0" maxWidth="500.0" minHeight="540.0" minWidth="500.0" prefHeight="540.0" prefWidth="500.0" spacing="10.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="67.0" prefWidth="400.0" text="CREATE NEW" textFill="GREY">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="12.0" prefWidth="400.0" text="ADD NEW PRODUCT" textFill="GREY">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </Separator>
+            <Label text="Item Name">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtName" prefHeight="30.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Item Description">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtDescription" prefHeight="30.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Item Category">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cbCategory" prefHeight="30.0" prefWidth="400.0" promptText="-- SELECT CATEGORY --" style="-fx-background-color: white; -fx-border-color: black;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label text="Item Price">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtPrice" prefHeight="30.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Item Quantity">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtQuantity" prefHeight="30.0" style="-fx-border-color: black; -fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                  <JFXButton fx:id="btnCancel" onAction="#btnCancelAction" style="-fx-border-color: grey; -fx-background-color: white;" text="CANCEL" />
+                  <JFXButton fx:id="btnSubmit" onAction="#btnSubmitAction" style="-fx-background-color: #00B448;" text="SUBMIT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+              </buttons>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </ButtonBar>
+         </children>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

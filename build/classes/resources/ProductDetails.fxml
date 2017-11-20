@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="productDetailsAnchorPane" maxHeight="552.0" minHeight="540.0" prefHeight="552.0" prefWidth="540.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid solid solid; -fx-border-width: 10 0 0 40;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.ProductDetailsController">
+   <children>
+      <VBox layoutX="115.0" layoutY="16.0" maxHeight="540.0" maxWidth="500.0" minHeight="540.0" minWidth="500.0" prefHeight="540.0" prefWidth="500.0" spacing="20.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="productCanelButton" contentDisplay="GRAPHIC_ONLY" onAction="#productCanelButtonAction" prefHeight="25.0" prefWidth="17.0" ripplerFill="#dd0101">
+               <graphic>
+                  <FontAwesomeIconView fill="#808080" glyphName="REMOVE" size="15" />
+               </graphic>
+               <VBox.margin>
+                  <Insets left="450.0" />
+               </VBox.margin>
+            </JFXButton>
+            <HBox>
+               <children>
+                  <Label fx:id="lblProductTitle1" alignment="CENTER" prefHeight="25.0" prefWidth="499.0" text="PRODUCT DETAILS" textFill="#616060">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" style="-fx-background-color: #28CE79;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="25.0" prefWidth="409.0">
+               <children>
+                  <Label maxWidth="150.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" text="Product Title:" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblProductTitle" prefHeight="25.0" prefWidth="448.0" text="Product Title" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="61.0" prefWidth="460.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label minWidth="150.0" prefHeight="61.0" prefWidth="150.0" text="Product Description:" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblProductDescription" prefHeight="61.0" prefWidth="458.0" text="Product Description" textFill="#827e7e" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="Available Quantity: " textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblProductQuantity" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="460.0" text="0" textFill="#28ce79">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets left="20.0" right="30.0" />
+               </VBox.margin>
+               <children>
+                  <Label maxWidth="150.0" minWidth="150.0" prefHeight="20.0" prefWidth="150.0" text="Product Price:" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblProductPrice" prefHeight="20.0" prefWidth="439.0" text="Kshs. 0000.00" textFill="#28ce79">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Separator>
+            <HBox maxWidth="420.0" minWidth="420.0" prefHeight="74.0" prefWidth="420.0" spacing="60.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="179.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="179.0" text="Set Quantity" textFill="#827e7e">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtQuantity" text="1" />
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnAddToCart" buttonType="RAISED" contentDisplay="TOP" maxHeight="67.0" maxWidth="180.0" minHeight="30.0" minWidth="180.0" onAction="#btnAddToCartAction" prefHeight="67.0" prefWidth="180.0" style="-fx-background-color: #28CE79;" text="Add To Cart" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CART_PLUS" size="25" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

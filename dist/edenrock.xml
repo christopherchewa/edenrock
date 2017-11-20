@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>G:\stuff\work\Java\edenrock\dist\edenrock.jar</jar>
+  <outfile>G:\stuff\work\Java\edenrock\dist\edenrock.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <classPath>
+    <mainClass>edenrock.MainApp</mainClass>
+    <cp>lib/activejdbc-1.4.13.jar</cp>
+    <cp>lib/activejdbc-instrumentation-1.4.11.jar</cp>
+    <cp>lib/controlsfx-8.40.12.jar</cp>
+    <cp>lib/fontawesomefx-8.9.jar</cp>
+    <cp>lib/javalite-common-1.4.13.jar</cp>
+    <cp>lib/javassist-3.18.1-GA.jar</cp>
+    <cp>lib/jfoenix.jar</cp>
+    <cp>lib/joda-time-2.9.9.jar</cp>
+    <cp>lib/junit-4.8.2.jar</cp>
+    <cp>lib/slf4j-api-1.7.6.jar</cp>
+    <cp>lib/slf4j-simple-1.7.6.jar</cp>
+    <cp>lib/sqlite-jdbc-3.7.2.jar</cp>
+  </classPath>
+  <jre>
+    <path>jre1.8.0_144</path>
+    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+</launch4jConfig>

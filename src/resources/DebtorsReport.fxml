@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="debtorsReportAnchorPane" maxHeight="552.0" maxWidth="820.0" minHeight="547.0" minWidth="820.0" prefHeight="547.0" prefWidth="775.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid none none; -fx-border-width: 10 40 0 0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.DebtorsReportController">
+   <children>
+      <TableView fx:id="salesTable" layoutX="243.0" layoutY="30.0" prefHeight="414.0" prefWidth="700.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="customerCol" prefWidth="259.0" text="CUSTOMER" />
+            <TableColumn fx:id="subtotalCol" prefWidth="107.0" text="SUBTOTAL" />
+            <TableColumn fx:id="balanceCol" prefWidth="103.0" text="BALANCE" />
+            <TableColumn fx:id="dateCol" prefWidth="152.0" text="TRANSACTION DATE" />
+            <TableColumn fx:id="dueDateCol" prefWidth="115.0" text="DUE DATE" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="40.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="152.0" text="DEBTORS REPORT" textFill="#807c7c" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="560.0" layoutY="40.0" maxHeight="30.0" minHeight="30.0" onKeyTyped="#txtSearchAction" prefHeight="30.0" prefWidth="200.0" promptText="Search..." style="-fx-border-style: solid solid solid transparent; -fx-border-color: #F2F2F2; -fx-effect: none; -fx-border-radius: 0 0 0 0; -fx-background-radius: 0 0 0 0;" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <HBox layoutX="37.0" layoutY="494.0" prefHeight="40.0" prefWidth="572.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+         <children>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="59.0" text="Balance:" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="69.0" text="Kshs." textFill="#ee0606">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="lblBalance" alignment="CENTER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="89.0" text="0000.0" textFill="#ee0606">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="8.0" left="15.0" right="15.0" top="8.0" />
+               </padding>
+            </Separator>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="44.0" text="Pay:" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="40.0" text="Kshs." textFill="#28ce79">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtAmountPaid" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="122.0">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <padding>
+                  <Insets bottom="8.0" left="15.0" right="15.0" top="8.0" />
+               </padding>
+            </Separator>
+            <JFXButton fx:id="btnSubmitPayment" maxHeight="30.0" minHeight="30.0" onAction="#btnSubmitPaymentAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #28CE79;" text="SUMBIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Separator layoutX="40.0" layoutY="464.0" prefWidth="200.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label layoutX="438.0" layoutY="30.0" maxHeight="15.0" minHeight="15.0" prefHeight="15.0" prefWidth="122.0" text="Search by customer or" textFill="#b9b9b9" wrapText="true" AnchorPane.leftAnchor="435.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="438.0" layoutY="53.0" maxHeight="15.0" minHeight="15.0" prefHeight="15.0" prefWidth="122.0" text="date (yyyy-mm-dd)" textFill="#b9b9b9" wrapText="true" AnchorPane.leftAnchor="435.0" AnchorPane.topAnchor="35.0" />
+   </children>
+   <stylesheets>
+      <URL value="@table-view.css" />
+      <URL value="@scroll-bar.css" />
+   </stylesheets>
+</AnchorPane>

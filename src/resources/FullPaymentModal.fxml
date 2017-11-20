@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="500.0" minWidth="461.0" prefHeight="535.0" prefWidth="461.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.FullPaymentModalController">
+   <children>
+      <VBox layoutX="254.0" layoutY="-7.0" maxWidth="420.0" minWidth="420.0" prefHeight="432.0" prefWidth="420.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton fx:id="btnCloseDialog" contentDisplay="GRAPHIC_ONLY" onAction="#btnCloseDialogAction">
+               <graphic>
+                  <FontAwesomeIconView glyphName="REMOVE" />
+               </graphic>
+               <VBox.margin>
+                  <Insets left="390.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label prefHeight="35.0" prefWidth="514.0" text="CUSTOMER INFORMATION:" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCustomerDetails" prefHeight="63.0" prefWidth="420.0" text="christopher chewa 0707095822" textFill="#827e7e">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Separator>
+            <Label alignment="CENTER" prefHeight="56.0" prefWidth="420.0" text="PRODUCTS PURCHASED:" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="418.0">
+               <children>
+                  <Label maxHeight="30.0" maxWidth="230.0" minHeight="30.0" minWidth="164.0" prefHeight="30.0" prefWidth="164.0" text="Product" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <Label maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="39.0" prefWidth="100.0" text="Qty" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <Label alignment="CENTER" maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="39.0" prefWidth="100.0" text="Total Cost" textFill="#827e7e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ListView fx:id="fullPaymentListView" prefHeight="160.0" prefWidth="420.0" styleClass="unstyled-list-view-products" stylesheets="@list-view-style.css" />
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="59.0" prefWidth="428.0">
+               <children>
+                  <Label maxHeight="30.0" maxWidth="120.0" minHeight="30.0" minWidth="120.0" prefHeight="30.0" prefWidth="120.0" text="EXPECTED AMOUNT:" textFill="#616060">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="Kshs." textFill="#38cf7e">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblExpectedAmount" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" text="0000.00" textFill="#38cf7e">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" maxWidth="420.0" minWidth="384.0" prefHeight="31.0" prefWidth="384.0">
+               <children>
+                  <JFXButton fx:id="btnCompleteTransaction" maxWidth="200.0" minHeight="50.0" minWidth="200.0" onAction="#btnCompleteTransactionAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #38d080;" text="COMPLETE TRANSACTION" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,146 @@
+
+
+Version:	3.10
+CmdLine:	G:\stuff\work\Java\edenrock\dist\edenrock.exe --l4j-debug
+WOW64:		yes
+Working dir:	G:\stuff\work\Java\edenrock\dist\.
+Java min ver:	
+Java max ver:	
+Bundled JRE:	jre1.8.0_144
+Check launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe (not found)
+Error msg:	This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.
+
+
+Version:	3.10
+CmdLine:	G:\stuff\work\Java\edenrock\dist\edenrock.exe --l4j-debug
+WOW64:		yes
+Working dir:	G:\stuff\work\Java\edenrock\dist\.
+Java min ver:	
+Java max ver:	
+Bundled JRE:	jre1.8.0_144
+Check launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe (OK)
+Main class:	edenrock.MainApp
+Add classpath:	lib\activejdbc-1.4.13.jar
+Add classpath:	lib\activejdbc-instrumentation-1.4.11.jar
+Add classpath:	lib\controlsfx-8.40.12.jar
+Add classpath:	lib\fontawesomefx-8.9.jar
+Add classpath:	lib\javalite-common-1.4.13.jar
+Add classpath:	lib\javassist-3.18.1-GA.jar
+Add classpath:	lib\jfoenix.jar
+Add classpath:	lib\joda-time-2.9.9.jar
+Add classpath:	lib\junit-4.8.2.jar
+Add classpath:	lib\slf4j-api-1.7.6.jar
+Add classpath:	lib\slf4j-simple-1.7.6.jar
+Add classpath:	lib\sqlite-jdbc-3.7.2.jar
+Launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe
+Launcher args:	-classpath "G:\stuff\work\Java\edenrock\dist\edenrock.exe;lib\activejdbc-1.4.13.jar;lib\activejdbc-instrumentation-1.4.11.jar;lib\controlsfx-8.40.12.jar;lib\fontawesomefx-8.9.jar;lib\javalite-common-1.4.13.jar;lib\javassist-3.18.1-GA.jar;lib\jfoenix.jar;lib\joda-time-2.9.9.jar;lib\junit-4.8.2.jar;lib\slf4j-api-1.7.6.jar;lib\slf4j-simple-1.7.6.jar;lib\sqlite-jdbc-3.7.2.jar" edenrock.MainApp
+Args length:	392/32768 chars
+Exit code:	0
+
+
+Version:	3.10
+CmdLine:	G:\stuff\work\Java\edenrock\dist\edenrock.exe --l4j-debug
+WOW64:		yes
+Working dir:	G:\stuff\work\Java\edenrock\dist\.
+Java min ver:	
+Java max ver:	
+Bundled JRE:	jre1.8.0_144
+Check launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe (OK)
+Main class:	edenrock.MainApp
+Add classpath:	lib\activejdbc-1.4.13.jar
+Add classpath:	lib\activejdbc-instrumentation-1.4.11.jar
+Add classpath:	lib\controlsfx-8.40.12.jar
+Add classpath:	lib\fontawesomefx-8.9.jar
+Add classpath:	lib\javalite-common-1.4.13.jar
+Add classpath:	lib\javassist-3.18.1-GA.jar
+Add classpath:	lib\jfoenix.jar
+Add classpath:	lib\joda-time-2.9.9.jar
+Add classpath:	lib\junit-4.8.2.jar
+Add classpath:	lib\slf4j-api-1.7.6.jar
+Add classpath:	lib\slf4j-simple-1.7.6.jar
+Add classpath:	lib\sqlite-jdbc-3.7.2.jar
+Launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe
+Launcher args:	-classpath "G:\stuff\work\Java\edenrock\dist\edenrock.exe;lib\activejdbc-1.4.13.jar;lib\activejdbc-instrumentation-1.4.11.jar;lib\controlsfx-8.40.12.jar;lib\fontawesomefx-8.9.jar;lib\javalite-common-1.4.13.jar;lib\javassist-3.18.1-GA.jar;lib\jfoenix.jar;lib\joda-time-2.9.9.jar;lib\junit-4.8.2.jar;lib\slf4j-api-1.7.6.jar;lib\slf4j-simple-1.7.6.jar;lib\sqlite-jdbc-3.7.2.jar" edenrock.MainApp
+Args length:	392/32768 chars
+Exit code:	0
+
+
+Version:	3.10
+CmdLine:	G:\stuff\work\Java\edenrock\dist\edenrock.exe --l4j-debug
+WOW64:		yes
+Working dir:	G:\stuff\work\Java\edenrock\dist\.
+Java min ver:	
+Java max ver:	
+Bundled JRE:	jre1.8.0_144
+Check launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe (OK)
+Main class:	edenrock.MainApp
+Add classpath:	lib\activejdbc-1.4.13.jar
+Add classpath:	lib\activejdbc-instrumentation-1.4.11.jar
+Add classpath:	lib\controlsfx-8.40.12.jar
+Add classpath:	lib\fontawesomefx-8.9.jar
+Add classpath:	lib\javalite-common-1.4.13.jar
+Add classpath:	lib\javassist-3.18.1-GA.jar
+Add classpath:	lib\jfoenix.jar
+Add classpath:	lib\joda-time-2.9.9.jar
+Add classpath:	lib\junit-4.8.2.jar
+Add classpath:	lib\slf4j-api-1.7.6.jar
+Add classpath:	lib\slf4j-simple-1.7.6.jar
+Add classpath:	lib\sqlite-jdbc-3.7.2.jar
+Launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe
+Launcher args:	-classpath "G:\stuff\work\Java\edenrock\dist\edenrock.exe;lib\activejdbc-1.4.13.jar;lib\activejdbc-instrumentation-1.4.11.jar;lib\controlsfx-8.40.12.jar;lib\fontawesomefx-8.9.jar;lib\javalite-common-1.4.13.jar;lib\javassist-3.18.1-GA.jar;lib\jfoenix.jar;lib\joda-time-2.9.9.jar;lib\junit-4.8.2.jar;lib\slf4j-api-1.7.6.jar;lib\slf4j-simple-1.7.6.jar;lib\sqlite-jdbc-3.7.2.jar" edenrock.MainApp
+Args length:	392/32768 chars
+Exit code:	0
+
+
+Version:	3.10
+CmdLine:	G:\stuff\work\Java\edenrock\dist\edenrock.exe --l4j-debug
+WOW64:		yes
+Working dir:	G:\stuff\work\Java\edenrock\dist\.
+Java min ver:	
+Java max ver:	
+Bundled JRE:	jre1.8.0_144
+Check launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe (OK)
+Main class:	edenrock.MainApp
+Add classpath:	lib\activejdbc-1.4.13.jar
+Add classpath:	lib\activejdbc-instrumentation-1.4.11.jar
+Add classpath:	lib\controlsfx-8.40.12.jar
+Add classpath:	lib\fontawesomefx-8.9.jar
+Add classpath:	lib\javalite-common-1.4.13.jar
+Add classpath:	lib\javassist-3.18.1-GA.jar
+Add classpath:	lib\jfoenix.jar
+Add classpath:	lib\joda-time-2.9.9.jar
+Add classpath:	lib\junit-4.8.2.jar
+Add classpath:	lib\slf4j-api-1.7.6.jar
+Add classpath:	lib\slf4j-simple-1.7.6.jar
+Add classpath:	lib\sqlite-jdbc-3.7.2.jar
+Launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe
+Launcher args:	-classpath "G:\stuff\work\Java\edenrock\dist\edenrock.exe;lib\activejdbc-1.4.13.jar;lib\activejdbc-instrumentation-1.4.11.jar;lib\controlsfx-8.40.12.jar;lib\fontawesomefx-8.9.jar;lib\javalite-common-1.4.13.jar;lib\javassist-3.18.1-GA.jar;lib\jfoenix.jar;lib\joda-time-2.9.9.jar;lib\junit-4.8.2.jar;lib\slf4j-api-1.7.6.jar;lib\slf4j-simple-1.7.6.jar;lib\sqlite-jdbc-3.7.2.jar" edenrock.MainApp
+Args length:	392/32768 chars
+Exit code:	0
+
+
+Version:	3.10
+CmdLine:	G:\stuff\work\Java\edenrock\dist\edenrock.exe --l4j-debug
+WOW64:		yes
+Working dir:	G:\stuff\work\Java\edenrock\dist\.
+Java min ver:	
+Java max ver:	
+Bundled JRE:	jre1.8.0_144
+Check launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe (OK)
+Main class:	edenrock.MainApp
+Add classpath:	lib\activejdbc-1.4.13.jar
+Add classpath:	lib\activejdbc-instrumentation-1.4.11.jar
+Add classpath:	lib\controlsfx-8.40.12.jar
+Add classpath:	lib\fontawesomefx-8.9.jar
+Add classpath:	lib\javalite-common-1.4.13.jar
+Add classpath:	lib\javassist-3.18.1-GA.jar
+Add classpath:	lib\jfoenix.jar
+Add classpath:	lib\joda-time-2.9.9.jar
+Add classpath:	lib\junit-4.8.2.jar
+Add classpath:	lib\slf4j-api-1.7.6.jar
+Add classpath:	lib\slf4j-simple-1.7.6.jar
+Add classpath:	lib\sqlite-jdbc-3.7.2.jar
+Launcher:	G:\stuff\work\Java\edenrock\dist\jre1.8.0_144\bin\javaw.exe
+Launcher args:	-classpath "G:\stuff\work\Java\edenrock\dist\edenrock.exe;lib\activejdbc-1.4.13.jar;lib\activejdbc-instrumentation-1.4.11.jar;lib\controlsfx-8.40.12.jar;lib\fontawesomefx-8.9.jar;lib\javalite-common-1.4.13.jar;lib\javassist-3.18.1-GA.jar;lib\jfoenix.jar;lib\joda-time-2.9.9.jar;lib\junit-4.8.2.jar;lib\slf4j-api-1.7.6.jar;lib\slf4j-simple-1.7.6.jar;lib\sqlite-jdbc-3.7.2.jar" edenrock.MainApp
+Args length:	392/32768 chars
+Exit code:	0

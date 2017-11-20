@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="productsListAnchorPane" maxHeight="552.0" minHeight="540.0" prefHeight="552.0" prefWidth="540.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid solid solid; -fx-border-width: 10 0 0 40;" stylesheets="@scroll-bar.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.ProductsListController">
+   <children>
+      <VBox layoutX="115.0" layoutY="16.0" maxHeight="540.0" maxWidth="500.0" minHeight="540.0" minWidth="500.0" prefHeight="540.0" prefWidth="500.0" spacing="10.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblCategoryTitle" prefHeight="67.0" prefWidth="400.0" text="CATEGORY TITLE" textFill="#868889">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="12.0" prefWidth="400.0" text="PRODUCTS LIST" textFill="#868889">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </Separator>
+            <ListView fx:id="categoryProductsListView" onMouseClicked="#categoryProductsListView" prefHeight="373.0" prefWidth="440.0" styleClass="unstyled-list-view" stylesheets="@list-view-style.css">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+         <padding>
+            <Insets top="7.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

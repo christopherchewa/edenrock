@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 29, 2017, 3:16:59 AM
+    Author     : Chewa
+*/
+
+.unstyled-list-view-products{
+    -fx-padding:0;
+    -fx-background-insets:0;
+     -fx-background-color: #F2F2F2;
+}
+
+.unstyled-list-view{
+    -fx-padding:0;
+    -fx-background-insets:0;
+     -fx-background-color:white;
+}
+
+.unstyled-list-view .list-cell:even{
+    -fx-background-color: white;
+    
+}
+
+.unstyled-list-view .list-cell:odd{
+    -fx-background-color: white;
+    
+}
+
+
+.unstyled-list-view-products .list-cell:even{
+    -fx-background-color: #F2F2F2;
+    
+}
+
+.unstyled-list-view-products .list-cell:odd{
+    -fx-background-color: #F2F2F2;
+    
+}
+
+.unstyled-list-view-products .list-cell:selected{
+    -fx-background-color: #F2F2F2;
+    -fx-text-fill:black;
+    
+}
+
+.unstyled-list-view-products .list-cell:notselected{
+    -fx-background-color: white;
+    -fx-text-fill:black;
+    
+}
+
+.unstyled-list-view .list-cell:selected{
+    -fx-background-color: white;
+    -fx-text-fill:black;
+    
+}
+
+.unstyled-list-view .list-cell:notselected{
+    -fx-background-color: white;
+    -fx-text-fill:black;
+    
+}

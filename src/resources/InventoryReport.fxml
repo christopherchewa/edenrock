@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inventoryReportAnchorPane" maxHeight="552.0" maxWidth="820.0" minHeight="547.0" minWidth="820.0" prefHeight="547.0" prefWidth="775.0" style="-fx-background-color: white; -fx-border-color: #F9F9F9; -fx-border-style: solid solid none none; -fx-border-width: 10 40 0 0;" stylesheets="@scroll-bar.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edenrock.controllers.InventoryReportController">
+   <children>
+      <TableView fx:id="productsTable" layoutX="24.3" layoutY="54.3" prefHeight="411.0" prefWidth="322.0" stylesheets="@table-view.css" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="titleCol" prefWidth="165.0" text="TITLE" />
+            <TableColumn fx:id="descriptionCol" prefWidth="396.0" text="DESCRIPTION" />
+            <TableColumn fx:id="priceCol" minWidth="0.0" prefWidth="98.0" text="PRICE" />
+            <TableColumn fx:id="quantityCol" prefWidth="78.0" text="QTY" />
+        </columns>
+      </TableView>
+      <HBox layoutX="83.0" layoutY="504.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="137.0" text="NO. OF PRODUCTS: " textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNumberOfProducts" alignment="CENTER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="55.0" text="0" textFill="#29cc78">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="25.0" layoutY="31.0" text="INVENTORY REPORT" textFill="#807c7c" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="562.0" layoutY="29.0" maxHeight="30.0" minHeight="30.0" onKeyTyped="#txtSearchAction" prefHeight="30.0" prefWidth="200.0" promptText="Search..." style="-fx-border-style: solid solid solid transparent; -fx-border-color: #F2F2F2; -fx-effect: none; -fx-border-radius: 0 0 0 0; -fx-background-radius: 0 0 0 0;" AnchorPane.topAnchor="20.0" />
+      <HBox layoutX="20.0" layoutY="499.0" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="443.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0">
+         <children>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="46.0" text="PRICE:" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="40.0" text="Kshs." textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrice" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="85.0">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <padding>
+                  <Insets bottom="8.0" left="20.0" right="12.0" top="8.0" />
+               </padding>
+            </Separator>
+            <Label maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="38.0" text="QTY:" textFill="#616060">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQuantity" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="50.0">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <padding>
+                  <Insets bottom="8.0" left="20.0" right="12.0" top="8.0" />
+               </padding>
+            </Separator>
+            <JFXButton fx:id="btnSubmit" maxHeight="30.0" minHeight="30.0" onAction="#btnSubmitAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #28CE79;" text="SUMBIT" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Separator layoutX="164.0" layoutY="477.0" prefWidth="200.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Label layoutX="419.0" layoutY="36.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="137.0" text="Search by title or quantity" textFill="#b9b9b9" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
